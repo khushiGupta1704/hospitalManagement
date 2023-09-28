@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontMasterPage.master.cs" Inherits="FrontMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head runat="server">
+    <title>Aastha Hospital</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/animate.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/magnific-popup.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/aos.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/ionicons.min.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/flaticon.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/icomoon.css">
+<link rel="stylesheet" href="http://aastha.omtechnoware.com/front-assets/css/style.css">
+   
+   
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <form runat="server">
+        
+          <div class="py-1 bg-black top">
+<div class="container">
+<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+<div class="col-lg-12 d-block">
+<div class="row d-flex">
+<div class=" pr-4 d-flex topper align-items-center">
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+<span class="text">+91 72063-81983</span>
+</div>
+<div class="d-flex topper align-items-center">
+<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+<span class="text"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8df4e2f8ffe8e0ece4e1cde8e0ece4e1a3eee2e0" style="color: white">omtechnoware@gmail.com</a></span>
+</div>
+<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+<p class="mb-0 register-link" ID="login" runat="server" visible="true"><a href="http://aastha.omtechnoware.com/Login">Sign In</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+<%--<div class="container">--%>
+<a class="navbar-brand" href="http://aastha.omtechnoware.com/Home" style="padding-left:100px">Aastha Hospital</a>
+<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu
+</button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav nav ml-auto">
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Home" class="nav-link"><span>Home</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/AboutUs" class="nav-link"><span>About</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Departments" class="nav-link"><span>Specialities</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Facilities" class="nav-link"><span>Facilities</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Doctors" class="nav-link"><span>Our Team</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Testimonials" class="nav-link"><span>Success Stories</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Blogs" class="nav-link"><span>Blogs</span></a></li>  
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Educational-Tutorial" class="nav-link"><span>Videos</span></a></li>
+<li class="nav-item"><a href="http://aastha.omtechnoware.com/Contact-us" class="nav-link"><span>Contact</span></a></li>
+<li class="nav-item cta mr-md-2"><a href="http://aastha.omtechnoware.com/Appointment" class="nav-link">Appointment</a></li>
+<%--<li ID="profile" runat="server" visible="false"> <asp:Image ID="profile_image" runat="server" width="30"
+        height="30" alt="" class="img-circle" style="margin-top: -8px;"/>
+<ul class="navi-level-2" >
+<li><asp:Label ID="user_name" runat="server" Text="Guest" style="font-size:15px;color:white;padding:15px"></asp:Label></li>
+<li  ID="ProfileRoute" runat="server" visible="false"><a href="http://aastha.omtechnoware.com/admin/setting">Profile</a></li>
+<li>
+    <asp:LinkButton ID="logout" runat="server" OnClick="logout_button_Click" >Logout</asp:LinkButton> 
+    </li>
+    </ul>                     
+</li>--%>
+</ul>
+</div>
+<%--</div>--%>
+</nav>
+            <main>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+           
+            <footer class="ftco-footer ftco-section img" style="background-image: url(/front-assets/images/footer-bg.jpg);">
+<div class="overlay"></div>
+<div class="container-fluid px-md-5">
+<div class="row mb-5">
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Aastha Hospital</h2>
+<p>Far far away, behind the word mountains, far from the countries.</p>
+<ul class="ftco-footer-social list-unstyled mt-5">
+<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-4">
+<h2 class="ftco-heading-2">Departments</h2>
+<ul class="list-unstyled">
+    
+   <asp:Repeater runat="server" ID="DepartmentRepeater">
+   <ItemTemplate>
+<li><a href="http://aastha.omtechnoware.com/DepartmentDetail/<%#Eval("id")%>"><span class="icon-long-arrow-right mr-2"></span><%#Eval("title")%></a></li>
+    </ItemTemplate>
+       </asp:Repeater>
+<%--<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Opthalmology</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Nuclear Magnetic</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Surgical</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cardiology</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Dental</a></li>--%>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-4">
+<h2 class="ftco-heading-2">Links</h2>
+<ul class="list-unstyled">
+<li><a href="http://aastha.omtechnoware.com/Home"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+<li><a href="http://aastha.omtechnoware.com/AboutUs"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+<li><a href="http://aastha.omtechnoware.com/Departments"><span class="icon-long-arrow-right mr-2"></span>Specialities</a></li>
+<li><a href="http://aastha.omtechnoware.com/Doctors"><span class="icon-long-arrow-right mr-2"></span>Our Team</a></li>
+<li><a href="http://aastha.omtechnoware.com/Blogs"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
+<li><a href="http://aastha.omtechnoware.com/Testimonials"><span class="icon-long-arrow-right mr-2"></span>Sucess Stories</a></li>
+<li><a href="http://aastha.omtechnoware.com/Facilities"><span class="icon-long-arrow-right mr-2"></span>Facilities</a></li>
+<li><a href="http://aastha.omtechnoware.com/Educational-Tutorial"><span class="icon-long-arrow-right mr-2"></span>Videos</a></li>
+<li><a href="http://aastha.omtechnoware.com/Contact-us"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Services</h2>
+<ul class="list-unstyled">
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Emergency Services</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Qualified Doctors</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Outdoors Checkup</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>24 Hours Services</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Have a Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><span class="icon icon-map-marker"></span><span class="text">81-s Model Town Market Road Hisar,Haryana 125001</span></li>
+<li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 72063-81983</span></a></li>
+<li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text"><span class="__cf_email__" data-cfemail="355c5b535a754c5a4047515a58545c5b1b565a58">omtechnoware@gmail.com</span></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+<p>
+Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://omtechnoware.com/" target="_blank">Om Technoware</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+        
+        <script nonce="eb014a72-741d-4062-94a1-0a1c26602e38">(function(w,d){!function(f,g,h,i){f[h]=f[h]||{};f[h].executed=[];f.zaraz={deferred:[],listeners:[]};f.zaraz.q=[];f.zaraz._f=function(j){return function(){var k=Array.prototype.slice.call(arguments);f.zaraz.q.push({m:j,a:k})}};for(const l of["track","set","debug"])f.zaraz[l]=f.zaraz._f(l);f.zaraz.init=()=>{var m=g.getElementsByTagName(i)[0],n=g.createElement(i),o=g.getElementsByTagName("title")[0];o&&(f[h].t=g.getElementsByTagName("title")[0].text);f[h].x=Math.random();f[h].w=f.screen.width;f[h].h=f.screen.height;f[h].j=f.innerHeight;f[h].e=f.innerWidth;f[h].l=f.location.href;f[h].r=g.referrer;f[h].k=f.screen.colorDepth;f[h].n=g.characterSet;f[h].o=(new Date).getTimezoneOffset();if(f.dataLayer)for(const s of Object.entries(Object.entries(dataLayer).reduce(((t,u)=>({...t[1],...u[1]})))))zaraz.set(s[0],s[1],{scope:"page"});f[h].q=[];for(;f.zaraz.q.length;){const v=f.zaraz.q.shift();f[h].q.push(v)}n.defer=!0;for(const w of[localStorage,sessionStorage])Object.keys(w||{}).filter((y=>y.startsWith("_zaraz_"))).forEach((x=>{try{f[h]["z_"+x.slice(7)]=JSON.parse(w.getItem(x))}catch{f[h]["z_"+x.slice(7)]=w.getItem(x)}}));n.referrerPolicy="origin";n.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(f[h])));m.parentNode.insertBefore(n,m)};["complete","interactive"].includes(g.readyState)?zaraz.init():f.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>
+        <script src="http://aastha.omtechnoware.com/front-assets/js/jquery.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/popper.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/bootstrap.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/jquery.easing.1.3.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/jquery.waypoints.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/jquery.stellar.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/owl.carousel.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/jquery.magnific-popup.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/aos.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/jquery.animateNumber.min.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/google-map.js"></script>
+<script src="http://aastha.omtechnoware.com/front-assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78ffb39268a52afc","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
+    </form>
+
+</body>
+</html>
